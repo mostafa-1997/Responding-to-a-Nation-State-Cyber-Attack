@@ -1,0 +1,9 @@
+#Provide the apache version and configuration lines to be changed 
+
+
+# Apache Version
+2.4.7
+
+# Configuration file change(Hint: the change has to be made in /etc/apache2/conf-enabled/security.conf)
+ServerTokens Prod
+ServerSignature Off 

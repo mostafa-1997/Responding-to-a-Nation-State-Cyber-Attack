@@ -1,0 +1,11 @@
+# Additional steps that can be taken to secure remote system access:
+1- Define a list of permitted users. By doing this, you ensure that any other user is not able to log into the server even if it belongs to the same access group as other users in the list.
+2- Changing the default port of the SSH service. This can help deflect automated bots and scanners who are looking for open port 22 randomly on the internet to brute force login credentials.
+3- Configuring SSH keys for login instead of passwords can make it even more difficult for attackers to brute force login credentials. You can disable password-based access and instead generate public keys on the client machines and add them to the server.
+4- Using multi-factor authentication (MFA) can be another way of further securing the client-server authentication. This may require using additional tools and libraries but they can be easily integrated with the ssh server to validate the end-users through MFA.
+
+# Additional steps that can be taken to improve password policies:
+1- Minimum of 8 characters in the password string. It should contain characters from the four primary categories: uppercase letters, lowercase letters, numbers, and characters.
+2- Should not be a common string like your name, city of birth, or date of birth which can all be easily guessed by attackers.
+3- It should be different from your previously used passwords on the same service.
+4- There should be a password rotation policy which should either automatically expire the password after certain days or remind the user to change the password once the threshold is reached.
